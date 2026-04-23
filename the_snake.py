@@ -40,7 +40,17 @@ clock = pygame.time.Clock()
 
 
 # Тут опишите все классы игры.
-...
+class GameObject:
+    def __init__(self,position=None, body_color=None):
+        if position is None:
+            self.position = (320, 240)
+        else:
+            self.position = position
+
+def draw(self, surface):
+    pass
+
+
 
 
 def main():
